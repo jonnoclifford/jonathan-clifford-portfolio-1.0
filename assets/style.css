@@ -52,6 +52,7 @@ li a {
 /* HERO SECTION */
 
 .hero-section {
+  height: 100vh;
   background: #F77C59;
   padding: 0 60px;
   color: #fff;
@@ -96,4 +97,38 @@ li a {
 .hero-img {
   width: auto;
   height: 50%;
+  background-image: url(./images/jc-profile.jpg);
+  background-size: ;
+  height: 30%;
+  width: auto;
+  margin-top: 75px;
+  animation: scale 7.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+
+/* FOOTER SECTION */
+
+.footer {
+  color: #F7F5F2;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  font-size: small;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 30%;
+  list-style: none;
+  height: 8vh;
+  background-color: #F7F5F220 ;
 }
