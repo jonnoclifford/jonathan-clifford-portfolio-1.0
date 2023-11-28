@@ -183,8 +183,8 @@
 }
 
 .portfolio-header h1 {
- font-size: 50px;
- color: var(--orange-bg);
+  font-size: 50px;
+  color: var(--orange-bg);
 }
 
 .portfolio {
@@ -324,7 +324,7 @@
   padding-top: 50px;
   font-size: 50px;
   color: var(--light-stone);
- }
+}
 
 #about a {
   text-decoration: none;
