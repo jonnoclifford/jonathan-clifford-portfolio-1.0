@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   font-family: Inter, Inter Placeholder, sans-serif;
-  background-color: var(--orange-bg);
 }
 
 :root {
   --orange-bg: #F77C59;
   --dark-blue: #0B4F6C;
+  --mid-blue: #2E8CB5;
   --light-stone: #F7F5F2;
 }
 
@@ -115,6 +115,144 @@ li a {
   }
 }
 
+.resume-cta {
+  border: 2px solid var(--light-stone);
+  width: 175px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.resume-text {
+  color: #fff;
+  text-align: center;
+}
+
+.resume-cta:hover {
+  background-color: #0B4F6C10;
+}
+
+
+/* PORTFOLIO SECTION */
+
+.portfolio-section {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-header {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.portfolio-people {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(./images/people.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-food {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(./images/food.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-sport {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(./images/sport.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-travel {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(./images/travel.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-interiors {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+  background-image: url(./images/interiors.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.text-container {
+  position: absolute;
+  height: 75px;
+  width: 100%;
+  padding: 0px 15px;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.text-container:hover {
+  height: 100%;
+}
+
+.name {
+  margin-top: 10px;
+  color:  var(--dark-blue);
+  font-size: 2rem;
+}
+
+.content {
+  padding: 25px 0px;
+  color: var(--mid-blue);
+}
+
+.button {
+  border: 1px solid var(--dark-blue);
+  width: 160px;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-bottom: 50px;
+}
 
 /* FOOTER SECTION */
 
