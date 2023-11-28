@@ -13,10 +13,6 @@
   --light-stone: #F7F5F2;
 }
 
-  h1 {
-
-}
-
 /* HEADER SECTION */
 
 .header {
@@ -123,7 +119,6 @@
   width: auto;
   height: 50%;
   background-image: url(./images/jc-profile.jpg);
-  background-size: ;
   height: 80%;
   width: auto;
   margin-top: 75px;
