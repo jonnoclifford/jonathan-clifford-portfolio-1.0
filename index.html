@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jonathan Clifford Portfolio</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
 
-  <header>
-    <section class="nav-bar">
-      <ul>
-        <li><a href="#about" id="about">About Me</a></li>
-        <li><a href="#portfolio" id="portfolio">Portfolio</a></li>
-        <li><a href="#contact" id="contact">Contact</a></li>
-      </ul>
+<!-- HEADER SECTION -->
 
+  <section class="header">
+    <section class="header-container">
+      <section class="header-left">
+        <a href="./index.html"><h2>Jonathan Clifford</h2></a>
+      </section>
+      <section class="header-right">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </section>
     </section>
-  </header>
+  </section>
 
-<!-- END OF NAVIGATION -->
 
 
 <!-- HERO SECTION -->
@@ -29,25 +32,27 @@
   <section class="hero-section">
     <section class="hero-wrapper">
       <section class="column-left">
-        <h2>Jonathan Clifford</h2>
         <h1>Photographer & Designer</h1>
-        <p>My intro paragraph goes here... Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga quos nam debitis, provident facilis perferendis in quas corporis delectus blanditiis harum nobis, magni aperiam dolores quis et molestiae magnam! </p>
-        <a href="#" class="resume-cta"><span class="resume-text">RESUME</span></a>
+        <p>I'm an Australian-raised, London-based photographer & designer, working across various industries locally and abroad</p>
+
+        <a href="/assets/JMA_CV_2023.pdf" class="resume-cta" download><span class="resume-text">RESUME</span></a>
         </section>
       <section class="column-right">
-        <img src="./assets/images/jc-profile.jpg" alt="profile photo" class="hero-img">
+        <img src="./assets/images/photo-profile.jpeg" alt="profile photo" class="hero-img">
       </section>
     </section>
   </section>
 
-<!-- END OF HERO SECTION -->
 
-<!-- PORTFOLIO SECTION -->
+  <!-- PORTFOLIO SECTION -->
 
 <section id="portfolio">
   <section class="portfolio-container">
-    <section class="portfolio-header">Portfolio</section>
+    <section class="portfolio-header">
+      <h1>Portfolio</h1>
+    </section>
     <section class="portfolio">
+
       <section class="portfolio-item">
         <section class="portfolio-people">
           <section class="text-container">
@@ -56,7 +61,7 @@
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, molestias quaerat ea fugit ad voluptates officia facilis totam voluptatibus magni. Temporibus totam, quas exercitationem ad magnam eligendi fuga hic excepturi dolorum tempora reprehenderit soluta. Alias dolore quos nulla, provident explicabo nostrum fugiat quasi enim sed dicta nam doloribus hic officiis!</p>
             </section>
             <button class="button">
-              <a href="#" class="button">
+              <a href="https://jonnoclifford.com/people" target="_blank" class="button">
                 <h3>View portfolio</h3>
               </a>
             </button>
@@ -72,7 +77,7 @@
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, molestias quaerat ea fugit ad voluptates officia facilis totam voluptatibus magni. Temporibus totam, quas exercitationem ad magnam eligendi fuga hic excepturi dolorum tempora reprehenderit soluta. Alias dolore quos nulla, provident explicabo nostrum fugiat quasi enim sed dicta nam doloribus hic officiis!</p>
             </section>
             <button class="button">
-              <a href="#" class="button">
+              <a href="https://jonnoclifford.com/food" target="_blank" class="button">
                 <h3>View portfolio</h3>
               </a>
             </button>
@@ -88,7 +93,7 @@
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, molestias quaerat ea fugit ad voluptates officia facilis totam voluptatibus magni. Temporibus totam, quas exercitationem ad magnam eligendi fuga hic excepturi dolorum tempora reprehenderit soluta. Alias dolore quos nulla, provident explicabo nostrum fugiat quasi enim sed dicta nam doloribus hic officiis!</p>
             </section>
             <button class="button">
-              <a href="#" class="button">
+              <a href="https://jonnoclifford.com/sportlifestyle" target="_blank"  class="button">
                 <h3>View portfolio</h3>
               </a>
             </button>
@@ -104,7 +109,7 @@
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, molestias quaerat ea fugit ad voluptates officia facilis totam voluptatibus magni. Temporibus totam, quas exercitationem ad magnam eligendi fuga hic excepturi dolorum tempora reprehenderit soluta. Alias dolore quos nulla, provident explicabo nostrum fugiat quasi enim sed dicta nam doloribus hic officiis!</p>
             </section>
             <button class="button">
-              <a href="#" class="button">
+              <a href="https://jonnoclifford.com/travel" target="_blank"  class="button">
                 <h3>View portfolio</h3>
               </a>
             </button>
@@ -120,13 +125,30 @@
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, molestias quaerat ea fugit ad voluptates officia facilis totam voluptatibus magni. Temporibus totam, quas exercitationem ad magnam eligendi fuga hic excepturi dolorum tempora reprehenderit soluta. Alias dolore quos nulla, provident explicabo nostrum fugiat quasi enim sed dicta nam doloribus hic officiis!</p>
             </section>
             <button class="button">
-              <a href="#" class="button">
+              <a href="https://jonnoclifford.com/interiors" target="_blank" class="button">
                 <h3>View portfolio</h3>
               </a>
             </button>
           </section>
         </section>
       </section>
+
+      <section class="portfolio-item">
+        <section class="portfolio-product">
+          <section class="text-container">
+            <h2 class="name">Product</h2>
+            <section class="content">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, molestias quaerat ea fugit ad voluptates officia facilis totam voluptatibus magni. Temporibus totam, quas exercitationem ad magnam eligendi fuga hic excepturi dolorum tempora reprehenderit soluta. Alias dolore quos nulla, provident explicabo nostrum fugiat quasi enim sed dicta nam doloribus hic officiis!</p>
+            </section>
+            <button class="button">
+              <a href="https://jonnoclifford.com/product" target="_blank" class="button">
+                <h3>View portfolio</h3>
+              </a>
+            </button>
+          </section>
+        </section>
+      </section>
+
       </section>
   </section>
 </section>
@@ -136,34 +158,91 @@
 <!-- ABOUT SECTION -->
 
   <section id="about">
+    <section class="about-header">
+      <h1>About</h1>
+    </section>
     <section class="about-container">
       <section class="about-section">
         <section class="img-container">
           <section class="about-image"></section>
         </section>
         <section class="about-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error tempore a, architecto deserunt mollitia rem dolor et atque sequi dolorum facilis cum vero quia veritatis quidem sapiente tenetur voluptatibus nemo aliquid non maiores asperiores libero consequuntur. At, repellat voluptates quam cumque natus eum quibusdam similique, quia, id iusto officia. Dolor rerum a tempore, corrupti id facere assumenda voluptatum iste minima totam, iure, ratione eligendi deserunt magni architecto deleniti. Aperiam sequi magnam accusantium, quisquam debitis assumenda reprehenderit labore voluptatem provident odio facere corporis nesciunt quis et placeat molestiae, ad distinctio corrupti veritatis tempora expedita, maiores ducimus quibusdam. Nemo ipsam nobis illo?
-        </section>
+          <span id="content">I’m an Australian-raised, London-based Photographer & Videographer working across commercial, documentary, and portrait photography.
+          </span>
+          <span id="content"></br>
+          Commissions, publications and collaborations include The New York Times, The British Journal of Photography, House & Garden, The U.S State Department, Woods Bagot, Nicola Harding, Pro:Direct Sport, and many other brands, restaurants, and designers, both nationally and abroad.
+          </span>
+          <span id="content"></br>
+          I'm also very passionate about sharing my photographic experience and have taught as a lecturer and in private workshops for several universities, academies and studios.
+          </span>
+          <span id="content"></br>
+            <a href="#contact">Get in touch</a> if you’d like to throw some ideas around about how we can work together.
+          </span>
+      </section>
+    </section>
+  </section>
+</section>
+<!-- END OF ABOUT SECTION -->
+
+<!-- CONTACT SECTION -->
+  <section id="contact">
+    <section class="portfolio-header">
+      <h1>Contact</h1>
+    </section>
+    <p>Send me an email using the form below:</p>
+    <section class="form-container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </section>
+
+    <p>Or get in touch with me through my social channels:</p>
+    <section class="social-icons">
+      <section class="ig">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </section>
+      <section class="li">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </section>
+      <section class="tw">
+        <a href="#"><i class="fab fa-twitter"></i></a>
       </section>
     </section>
   </section>
 
-  <!-- END OF ABOUT SECTION -->
 
 
-  <!-- CONTACT SECTION -->
-
-  <!-- END OF CONTACT SECTION -->
 
 
-  <!-- FOOTER SECTION -->
+<!-- END OF CONTACT SECTION -->
+
+
+<!-- FOOTER SECTION -->
 <footer>
   <section class="footer">
-    Copyright © 2023
+    Copyright Jonathan Clifford © 2023
   </section>
 
 </footer>
-  <!-- END OF FOOTER SECTION -->
+<!-- END OF FOOTER SECTION -->
 
 
 </body>

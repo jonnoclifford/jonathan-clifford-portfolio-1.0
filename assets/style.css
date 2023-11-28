@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: Inter, Inter Placeholder, sans-serif;
+
 }
 
 :root {
@@ -16,46 +17,70 @@
 
 }
 
+/* HEADER SECTION */
 
-/* MAIN NAV */
-
-.nav-bar {
-  position: absolute;
-  z-index: 2;
+.header {
   width: 100%;
+  padding-top: 30px;
+  background-color: #F77C59;
+  color: #fff;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 2px solid #F7F5F2;
 }
 
-ul {
+.bottom-border {
+  width: 90%;
+  border-bottom: 2px solid #F7F5F2;
+}
+
+.header-container {
+  padding-left: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.header-left {
   display: flex;
-  font-size: small;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0 30%;
-  list-style: none;
-  height: 8vh;
-  background-color: #F7F5F220 ;
+  flex-direction: column;
 }
 
-li a {
-  display: block;
+.header-left h2 {
+  margin-bottom: 24px;
+
+}
+.header-left a {
+  text-decoration: none;
+  color: var(--light-stone);
+}
+
+.header-left p {
+  line-height: 2;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end ;
+  padding: 0 85px;
+}
+
+.header-right a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 25px;
 }
 
-/* MOBILE NAV */
-
-#mobile-nav {
-  display: none;
-}
 
 /* HERO SECTION */
 
 .hero-section {
   height: 100vh;
   background: #F77C59;
-  padding: 0 60px;
+  padding: 90px 50px;
   color: #fff;
+  border-bottom: 2px solid #F7F5F2;
 }
 
 .hero-wrapper {
@@ -99,11 +124,11 @@ li a {
   height: 50%;
   background-image: url(./images/jc-profile.jpg);
   background-size: ;
-  height: 30%;
+  height: 80%;
   width: auto;
   margin-top: 75px;
-  animation: scale 7.5s;
-  animation-fill-mode: forwards;
+/*  animation: scale 7.5s;
+  animation-fill-mode: forwards; */
 }
 
 @keyframes scale {
@@ -117,34 +142,49 @@ li a {
 
 .resume-cta {
   border: 2px solid var(--light-stone);
-  width: 175px;
-  padding: 30px;
-  margin-top: 20px;
+  width: 130px;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .resume-text {
   color: #fff;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .resume-cta:hover {
   background-color: #0B4F6C10;
 }
 
-
 /* PORTFOLIO SECTION */
+#portfolio {
+  scroll-margin-top: 120px;
+  border-bottom: 2px solid var(--orange-bg);
+}
 
 .portfolio-section {
   width: 100%;
   height: auto;
+  background-color: var(--dark-blue);
+  border-bottom: 2px solid #F7F5F2 ;
 }
 
 .portfolio-header {
-  font-size: 4rem;
+  color: var(--light-stone);
+  font-size: 3rem;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  scroll-margin-top: 80px;
+}
+
+.portfolio-header h1 {
+ font-size: 50px;
+ color: var(--orange-bg);
 }
 
 .portfolio {
@@ -155,12 +195,11 @@ li a {
 }
 
 .portfolio-people {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 800px;
   background: #fff;
   position: relative;
   box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   margin: 50px;
   background-image: url(./images/people.jpeg);
   background-size: cover;
@@ -168,12 +207,11 @@ li a {
 }
 
 .portfolio-food {
-  width: 400px;
+  width: 500px;
   height: 400px;
   background: #fff;
   position: relative;
   box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   margin: 50px;
   background-image: url(./images/food.jpeg);
   background-size: cover;
@@ -181,12 +219,11 @@ li a {
 }
 
 .portfolio-sport {
-  width: 400px;
+  width: 500px;
   height: 400px;
   background: #fff;
   position: relative;
   box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   margin: 50px;
   background-image: url(./images/sport.jpeg);
   background-size: cover;
@@ -194,12 +231,11 @@ li a {
 }
 
 .portfolio-travel {
-  width: 400px;
+  width: 500px;
   height: 400px;
   background: #fff;
   position: relative;
   box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   margin: 50px;
   background-image: url(./images/travel.jpeg);
   background-size: cover;
@@ -207,14 +243,25 @@ li a {
 }
 
 .portfolio-interiors {
-  width: 400px;
+  width: 500px;
   height: 400px;
   background: #fff;
   position: relative;
   box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
   margin: 50px;
   background-image: url(./images/interiors.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-product {
+  width: 500px;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+  margin: 50px;
+  background-image: url(./images/product.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -236,37 +283,181 @@ li a {
 }
 
 .name {
-  margin-top: 10px;
-  color:  var(--dark-blue);
+  margin-top: 18px;
+  color:  var(--orange-bg);
+  background-color: #fff;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .content {
   padding: 25px 0px;
-  color: var(--mid-blue);
+  color: var(--dark-blue);
 }
 
 .button {
-  border: 1px solid var(--dark-blue);
   width: 160px;
-  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+
   padding: 15px;
   margin-bottom: 50px;
+}
+
+
+/* ABOUT SECTION */
+
+#about {
+  scroll-margin-top: 120px;
+  background-color: var(--orange-bg);
+  padding-bottom: 50px;
+}
+
+.about-header {
+  color: var(--light-stone);
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 80px;
+}
+
+.about-header h1 {
+  padding-top: 50px;
+  font-size: 50px;
+  color: var(--light-stone);
+ }
+
+#about a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.about-container {
+  border-bottom: 2px solid var(--orange-bg);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  width: 80%;
+  height: auto;
+  background-color: var(--light-stone);
+  box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+
+}
+
+.about-image {
+  height: 450px;
+  width: 450px;
+  background-image: url(./images/jc-profile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-text {
+  height: 100%;
+  width: 40%;
+  font-size: 1rem;
+  margin-left: 100px;
+  background-color: var(--light-stone);
+}
+
+#content::after{
+  content: "\a";
+  white-space: pre;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+  scroll-margin-top: 120px;
+}
+
+#contact p {
+  font-size: 20px;
+  padding: 25px;
+  color: var(--orange-bg);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  width: 30%;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 10px;
+}
+
+/* CONTACT FORM */
+
+input[type=text], select, textarea {
+  background-color: #fff;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--orange-bg);
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  padding-top: 10px
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #fff;
+  color: var(--orange-bg);
+  padding: 12px 20px;
+  border: 1px solid var(--orange-bg);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--orange-bg);
+  color: #fff;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  margin-top: 50px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid var(--orange-bg);
+  background-color: var(--light-stone);
+  padding: 20px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* FOOTER SECTION */
 
 .footer {
-  color: #F7F5F2;
+  color: var(--orange-bg);
+  margin-top: 30px;
   position: absolute;
-  z-index: 2;
   width: 100%;
   display: flex;
-  font-size: small;
+  font-size: 15px;
   align-items: center;
   justify-content: space-evenly;
   padding: 0 30%;
   list-style: none;
   height: 8vh;
-  background-color: #F7F5F220 ;
+  background-color: #F7F5F2 ;
 }
